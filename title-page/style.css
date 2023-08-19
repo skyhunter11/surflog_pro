@@ -1,10 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@font-face {
+  font-family: 'gipsierokracxed';
+  src: url('fonts/gipsiero_kracxed-webfont.woff2') format('woff2'),
+       url('fonts/gipsiero_kracxed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kionaitallic';
+  src: url('fonts/kiona/kiona-itallic-webfont.woff2') format('woff2'),
+       url('fonts/kiona/kiona-itallic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kionaregular';
+  src: url('fonts/kiona/kiona-regular-webfont.woff2') format('woff2'),
+       url('fonts/kiona/kiona-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: 'kionaregular', Roboto, sans-serif;
   display: flex;
   flex-direction: column;
 
@@ -51,7 +77,9 @@ input {
 }
 
 h1 {
-  color: white;
+  font-family: 'gipsierokracxed';
+  color: black;
+  font-size: 6rem;
 }
 
 .header {
