@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+
+<body>
+
+    <div class="left-panel">
+        <div class="logo">
+                <img src="assets/logo-polished.png" alt="assets/odin-lined.png">
+                <h1>SurfLog Pro</h1>
+        </div>
+        <p>Photo by Ryan Loughlin on Unsplash</p>
+    </div>
+
+    <div class="right-panel">
+        <div class="header">
+            <div>
+                <p>Welcome to SurfLog Pro! SurfLog Pro tracks and remembers all the epic sessions. And all the shitty ones too. Analyze your progression and never stop improving.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+            </div>
+        </div>
+
+        <div class="input-section">
+        <p>Let's do this!</p>
+        <form id="my-form" action='' method='get'>
+            <label for="firstname">First Name:
+                <input type="text" id="firstname" name="firstname" placeholder="Duke" required>
+                <div id="firstname_error" class="error"></div>
+            </label>
+
+            <label for="lastname">Last Name:
+                <input type="text" id="lastname" name="lastname" placeholder="Kahanamoku" required>
+                <div id="lastname_error" class="error"></div>
+            </label>
+
+            <label for="email">Email:
+                <input type="email" id="email" name="email" placeholder="duke@gmail.com" required autocomplete="off">
+                <div id="email_error" class="error"></div>
+            </label>
+
+            <label for="tel">Phone number:
+                <input type="tel" id="tel" name="tel" placeholder="808-123-1234" pattern="[0-9]{3}-*[0-9]{3}-*[0-9]{4}" required>
+                <div id="tel_error" class="error"></div>
+            </label>
+
+            <label for="password">Password:
+                <input type="password" id="password" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                <div id="password_error" class="error"></div>
+            </label>
+
+            <label for="confirm">Confirm Password:
+                <input type="password" id="confirm" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                <div id="confirm_error" class="error"></div>
+            </label>
+            <button type="submit" form="my-form">Create Account</button>
+        </form>
+        </div>
+
+        <div class="submit-section">
+            <div>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
