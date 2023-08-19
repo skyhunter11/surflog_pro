@@ -1,4 +1,3 @@
-console.log("howdy motherfucker");
 
 //input references
 const firstname = document.querySelector("#firstname");
