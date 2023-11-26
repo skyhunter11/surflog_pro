@@ -59,6 +59,10 @@ img {
   width: 600px;
 }
 
+.mainLogo {
+  padding-left: 100px;
+}
+
 button {
   font-family: Roboto, sans-serif;
   border: none;
